@@ -7,7 +7,6 @@
 ```text
 .
 |-- Preprocessing/
-|   |-- preprocess_rhythm_wm_gooddata.m
 |   |-- Block_Combining_verAuto.m
 |   |-- save_clean_rawdata.m
 |   |-- clean_raw_data.m
