@@ -1,12 +1,6 @@
-# Retrospective Attention Theta Rhythm Analysis Code
+# Retrospective attention reveals a decaying theta rhythm in conscious access to a preceding stimulus
 
-MATLAB code used for the accepted iScience manuscript:
 
-**Retrospective attention reveals a decaying theta rhythm in conscious access to a preceding stimulus**
-
-The corresponding data are available on Zenodo:
-
-[https://doi.org/10.5281/zenodo.21192160](https://doi.org/10.5281/zenodo.21192160)
 
 ## Repository Structure
 
@@ -37,41 +31,9 @@ The corresponding data are available on Zenodo:
 `-- README.md
 ```
 
-Raw data, processed `.mat`/`.csv` files, and generated figures are intentionally excluded from this repository. Download the data from Zenodo and place the required data folders in the local project directory before running the scripts.
+Raw data can be downloaded from Zenodo:
+[https://doi.org/10.5281/zenodo.21192160](https://doi.org/10.5281/zenodo.21192160)
 
-## Expected Local Data Layout
-
-Most figure scripts resolve paths relative to the repository root:
-
-```text
-.
-|-- 01_Data/
-|   |-- 01_RawData/
-|   |-- 01_Preprocessed/
-|   |-- 02_BehavioralData/
-|   |-- 03_IRASAData/
-|   |-- 04_CurvefittingData/
-|   |-- 05_AdjR2/
-|   `-- 06_PhaseAlign/
-|-- 03_Figure/
-|-- Preprocessing/
-`-- Figure/
-```
-
-## Dependencies
-
-- MATLAB
-- Optimization Toolbox is used when available for `lsqnonlin`; `Fig5_1_Curvefitting.m` falls back to `fminsearch` if it is unavailable.
-- Statistics and Machine Learning Toolbox for functions such as `signrank` and `ksdensity`.
-- FieldTrip for `Fig7_1_Hilbert.m`; set `FIELDTRIP_ROOT` before running that script.
-- CircStat functions (`circ_mean`, `circ_rtest`, `circ_vtest`) and `fdr_bh` for phase statistics.
-- `edfmex` for EDF conversion in the eye-tracking preprocessing helpers.
-
-Before running analyses from the repository root, add the code folders to the MATLAB path:
-
-```matlab
-addpath(genpath(pwd));
-```
 
 ## Typical Analysis Order
 
