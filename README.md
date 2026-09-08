@@ -1,6 +1,8 @@
 # Retrospective attention reveals a decaying theta rhythm in conscious access to a preceding stimulus
 
-
+This repository provides the MATLAB analysis code for preprocessing behavioral and eye-tracking data and reproducing the main and supplementary figure analyses. 
+The `Preprocessing/` folder contains scripts for combining behavioral files with eye-tracking-derived saccade and gaze-position information, then rejecting trials based on eye-movement criteria. 
+The `Figure/` folder contains scripts for behavioral time-series construction, time-series model fitting, IRASA/spectral analysis, Hilbert phase analysis, circular statistics, and figure generation.
 
 ## Repository Structure
 
